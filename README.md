@@ -1,6 +1,6 @@
 # actuellement-TAL
-> *Chaque linguiste renvoyé, un humain de plus qui fait du TAL.*  
-> (Every time a linguist gets fired, one more human joins NLP.)
+> *Chaque linguiste renvoyé, un humain ordinaire de plus qui fait du TAL.*  
+> (Every linguist fired, one more ordinary human joins NLP.)
 
 Putting the "Natural" back in Natural Language Processing by removing the "Processing" and keeping only the "Natural" :)
 
