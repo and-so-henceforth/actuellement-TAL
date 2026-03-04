@@ -9,8 +9,8 @@ However, due to the author's incomplete command of French orthography, **TAL** i
 
 *(For English readers: If your project takes language as input and does something with it — welcome. No gatekeeping here.)*
 
-# 给中文读者看的部分
-# 仓库名称：自然（的）语言处理
+## 给中文读者看的部分
+### 仓库名称：自然（的）语言处理
 **Q：这到底是什么玩意？**
 **A：只要你的输入是“语言”，输出是对语言的某种“处理”，就算。**
 包括但不限于以下内容：
