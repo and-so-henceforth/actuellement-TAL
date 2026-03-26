@@ -31,8 +31,6 @@ The cleaning script removes:
 - Institutional keywords, metadata
 - Lines shorter than 10 characters
 
-What remains is **a few MB of clean English text** – just enough to learn word boundaries and basic syntax.
-
 
 ## 中文
 
@@ -61,4 +59,16 @@ What remains is **a few MB of clean English text** – just enough to learn word
 - 机构关键词、元数据关键词
 - 过短行（<10 字符）
 
-最终保留 **约几 MB 纯英文正文**，刚好够模型学到单词边界和基本句法。
+# 注意
+## 训练数据的"幽灵"
+
+由于 PDF 解析时的编码页错乱，训练数据中混入了**日文假名乱码**（如 `Microsoft Passpけoたrt`）。这些乱码（推测）来自：
+- 日英跨语言论文中的真实日语片段（多语言 NLP 研究）
+- PDF 字体映射错误导致的解码事故（`rt` → `た` 字形混淆）
+
+因此，模型本质上是一个**"ACL 多语言幽灵"**：
+- 能生成标准学术英语：`The proposed method achieves...`
+- 也能生成日式英语胡话：`Microsoft Passport は多くの批判を受けたが state-of-the-art...`
+- 偶尔会在英文单词中插入假名，产生**赛博朋克学术体**
+
+**这不是 bug，是特征**（It's not a bug, it's a feature）。我们保留这种"数字考古层"，作为从 PDF 废墟中重建文本的见证。
