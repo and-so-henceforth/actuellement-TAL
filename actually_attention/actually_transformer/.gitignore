@@ -1,0 +1,14 @@
+# 原始 PDF 文件（太大，不上传）
+*.pdf
+
+# 提取和清洗过程中生成的临时文本
+*.txt
+!README.md          # 例外：保留 README.md
+!requirements.txt
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 其他临时文件
+*.log
